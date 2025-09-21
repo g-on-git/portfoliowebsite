@@ -1,0 +1,307 @@
+// For screens smaller than 992px
+@include respond-down(lg) {
+  // <--START OF HOME SECTION RESPONSIVE-->
+  .nav-8bit-hero {
+    h3 {
+      font-size: 21px;
+    }
+  }
+
+  .contact-details,
+  .contact-container {
+    .socials {
+      .fb {
+        width: 33px;
+      }
+      img {
+        width: 33px;
+        &:hover {
+          scale: 1;
+        }
+      }
+    }
+  }
+
+  .main-heading {
+    font-size: 21rem;
+    margin-top: -14rem;
+    margin-bottom: -6rem;
+  }
+  .hero-headings {
+    margin-top: 1rem;
+    .hero-subheading {
+      span {
+        font-size: 2rem !important;
+      }
+    }
+  }
+
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .profile-details {
+      gap: 34px !important;
+    }
+  }
+
+  .info-body {
+    margin-top: 2rem;
+  }
+  .information {
+    margin-top: 1rem !important;
+  }
+
+  .selected-project-container {
+    margin-bottom: 2rem;
+  }
+}
+
+// For screens smaller than 768px
+@include respond-down(md) {
+  .nav-8bit-hero {
+    padding: 2rem 1rem;
+    h3 {
+      font-size: 18px;
+    }
+  }
+  .main-heading {
+    font-size: 20rem;
+    margin-top: -13rem;
+    margin-bottom: -7rem;
+  }
+  .hero-headings {
+    margin-top: 1rem;
+    .hero-subheading {
+      span {
+        font-size: 1.5rem !important;
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+  .skill-selected-detail {
+    .head {
+      flex-direction: column;
+      .skill-logo-big {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+// For screens smaller than 576px
+@include respond-down(sm) {
+  .info-buttons {
+    .main-button,
+    .second-button {
+      font-size: $small-screen-p-font-size;
+      padding: 10px;
+    }
+  }
+  .custom-border {
+    padding: 2rem 1rem 1rem 1rem;
+    border-radius: 6px;
+  }
+  .hero-headings {
+    margin-top: 1rem;
+    .hero-subheading {
+      span {
+        font-size: 1rem !important;
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+  .nav-8bit-hero {
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .main-heading {
+    font-size: 11rem;
+    line-height: 28rem;
+  }
+  .hero-headings {
+    position: relative;
+
+    p {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 11px;
+    }
+  }
+
+  .hero-section .menus {
+    height: 82px;
+  }
+
+  .load-button,
+  .start-button {
+    font-size: 18px !important;
+
+    &hover {
+      transform: scale(0.5) !important;
+    }
+  }
+  .trademark-name {
+    padding-top: 1rem;
+    font-size: 12px;
+  }
+
+  .info-content {
+    .info-body {
+      .info-title {
+        span {
+          font-size: $small-screen-title-font-size;
+        }
+        .information {
+          p {
+            font-size: $small-screen-p-font-size;
+          }
+        }
+      }
+    }
+  }
+
+  .abilities-container {
+    .title span {
+      font-size: $small-screen-title-font-size;
+    }
+    .skill-item {
+      .skill-percentage {
+        font-size: $small-screen-p-font-size;
+      }
+      .language span {
+        font-size: $small-screen-p-font-size;
+      }
+    }
+
+    .skill-selected-detail {
+      .head {
+        .skill-logo-big img {
+          height: 239px !important;
+          width: 239px !important;
+        }
+        .head-skill-content {
+          gap: 18px;
+          .skill-title h4 {
+            font-size: $small-screen-title-font-size;
+          }
+          .skill-bar span {
+            font-size: $small-screen-p-font-size;
+          }
+          .detailed-label {
+            font-size: $small-screen-p-font-size;
+          }
+        }
+      }
+      .skill-description p {
+        font-size: $small-screen-p-font-size;
+      }
+      .main-button {
+        width: 100%;
+        font-size: $small-screen-p-font-size;
+      }
+    }
+  }
+
+  .project-header {
+    .title {
+      font-size: $small-screen-title-font-size;
+    }
+  }
+
+  .project-container {
+    .project-content {
+      .project-title {
+        h5 {
+          font-size: $small-screen-title-font-size;
+        }
+        span {
+          font-size: $small-screen-p-font-size;
+        }
+      }
+      .main-button {
+        font-size: $small-screen-p-font-size;
+        padding: 10px;
+      }
+      .project-information p {
+        font-size: $small-screen-p-font-size;
+      }
+    }
+  }
+
+  .project-details-container {
+    .skills-required-container {
+      .title span {
+        font-size: $small-screen-title-font-size;
+      }
+      .item-skill {
+        height: 126px;
+        .item-image img {
+          width: 80px;
+          object-fit: contain;
+        }
+      }
+
+      .objectives-container {
+        .title span {
+          font-size: $small-screen-title-font-size;
+        }
+        .objectives-description {
+          height: 257px;
+          p {
+            font-size: $small-screen-p-font-size;
+          }
+        }
+      }
+    }
+
+    .selected-project-container {
+      .selected-project-image-big {
+        height: 324px;
+      }
+      .project-selected-title h2 {
+        font-size: 16px;
+      }
+      .selected-project-details span {
+        font-size: $small-screen-title-font-size;
+      }
+      .second-button {
+        width: 100%;
+        font-size: $small-screen-title-font-size;
+      }
+    }
+  }
+
+  .contact-container {
+    .me-image img {
+      width: 195px;
+      height: 195px;
+    }
+    p {
+      font-size: $small-screen-p-font-size;
+    }
+
+    form input {
+      font-size: $small-screen-p-font-size;
+    }
+
+    .main-button {
+      width: 100%;
+      font-size: $small-screen-p-font-size;
+    }
+
+    span,
+    span a {
+      font-size: $small-screen-p-font-size;
+    }
+  }
+  .nav-8bit {
+    padding: 1rem;
+    font-size: $small-screen-p-font-size;
+  }
+}
