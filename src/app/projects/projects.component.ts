@@ -57,7 +57,7 @@ export class ProjectsComponent {
     },
     {
       imgUrl: '',
-      title: 'Task Management System',
+      title: 'To Do List App',
       difficulty: 'easy',
       techStack: [
         {
@@ -78,7 +78,7 @@ export class ProjectsComponent {
         'The Task Management System is a productivity-focused web or mobile app designed to help users stay organized and manage daily tasks efficiently. The app allows users to create, edit, prioritize, and categorize tasks based on deadlines, importance, or urgency. Features such as task reminders, progress tracking, and the ability to mark tasks as complete make it easier for individuals and teams to stay on top of their responsibilities.',
     },
     {
-      imgUrl: '',
+      imgUrl: 'https://g-on-git.github.io/todo-app/',
       title: 'Expense Tracker App',
       difficulty: 'easy',
       techStack: [
